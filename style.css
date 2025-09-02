@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Libre Baskerville", serif;
+}
+
+.heading {
+  color: #a9927d;
+  text-align: center;
+  font-size: 3rem;
+}
+
+hr {
+  max-width: 50%;
+  margin: 10px auto;
+  height: 1px;
+  background-color: #49111c;
+}
+
+.filter-btns {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.btn {
+  all: unset;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 25px;
+  color: #f2f4f3;
+  background-color: #0a0908;
+  width: 5rem;
+  font-size: 1.2rem;
+  padding-inline: 10px;
+  padding-block: 5px;
+
+  &:hover {
+    cursor: pointer;
+    color: #0a0908;
+    background-color: #f2f4f3;
+  }
+}
+
+.gallary {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 2rem;
+}
+
+.images > img {
+  width: 13rem;
+  border-radius: 10px;
+
+  &:hover {
+    scale: 1.2;
+  }
+}
+
+.lightbox {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(58, 58, 58, 0.84);
+}
+
+.lightbox .img {
+  width: 50%;
+  border-radius: 10px;
+  color: #f2f4f3;
+}
+
+.lightbox button {
+  all: unset;
+  border: 1px solid black;
+  border-radius: 10px;
+  min-width: 2.5rem;
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 10px;
+  background-color: #0a0908;
+  color: #f2f4f3;
+
+  position: absolute;
+
+  &:hover {
+    background-color: #f2f4f3;
+    color: #0a0908;
+    cursor: pointer;
+  }
+}
+
+.lightbox .close {
+  top: 10px;
+  right: 10px;
+}
+
+.lightbox .previous {
+  top: 50%;
+  left: 10px;
+}
+
+.lightbox .next {
+  top: 50%;
+  right: 10px;
+}
+
+@media (max-width: 665px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .images > img {
+    width: 20rem;
+  }
+
+  .lightbox button {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 470px) {
+  html {
+    font-size: 50%;
+  }
+
+  .images > img {
+    width: 30rem;
+  }
+}
+
+@media (max-width: 360px) {
+  html {
+    font-size: 37.5%;
+  }
+
+  .images > img {
+    width: 35rem;
+  }
+}

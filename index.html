@@ -3,9 +3,80 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Image Gallary</title>
   </head>
   <body>
+    <header>
+      <h1 class="heading">Responsive Image Gallary</h1>
+      <hr />
+    </header>
+
+    <main>
+      <section>
+        <div class="filter-btns">
+          <button onclick="filterImages('all')" class="btn">All</button>
+          <button onclick="filterImages('nature')" class="btn">Nature</button>
+          <button onclick="filterImages('city')" class="btn">City</button>
+          <button onclick="filterImages('animal')" class="btn">Animals</button>
+        </div>
+      </section>
+
+      <section>
+        <div class="gallary">
+          <div class="images animal">
+            <img src="assests/animal-image-1.jpg" alt="animal-image-1" />
+          </div>
+          <div class="images nature">
+            <img src="assests/nature-image-4.jpg" alt="nature-image-4" />
+          </div>
+          <div class="images city">
+            <img src="assests/city-image-2.jpg" alt="city-image-2" />
+          </div>
+          <div class="images animal">
+            <img src="assests/animal-image-4.jpg" alt="animal-image-4" />
+          </div>
+          <div class="images city">
+            <img src="assests/city-image-1.jpg" alt="city-image-1" />
+          </div>
+          <div class="images nature">
+            <img src="assests/nature-image-1.jpg" alt="nature-image-1" />
+          </div>
+          <div class="images city">
+            <img src="assests/city-image-3.jpg" alt="city-image-3" />
+          </div>
+          <div class="images animal">
+            <img src="assests/animal-image-2.jpg" alt="animal-image-2" />
+          </div>
+          <div class="images city">
+            <img src="assests/city-image-4.jpg" alt="city-image-4" />
+          </div>
+
+          <div class="images nature">
+            <img src="assests/nature-image-2.jpg" alt="nature-image-2" />
+          </div>
+          <div class="images animal">
+            <img src="assests/animal-image-3.jpg" alt="animal-image-3" />
+          </div>
+          <div class="images nature">
+            <img src="assests/nature-image-3.jpg" alt="nature-image-3" />
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="lightbox">
+          <button class="close" onclick="closeLightbox()">✕</button>
+
+          <button class="previous" onclick="changeSlide(-1)">❮</button>
+
+          <img src="" alt="lightbox-image" class="img" />
+
+          <button class="next" onclick="changeSlide(+1)">❯</button>
+        </div>
+      </section>
+    </main>
+
     <script src="index.js"></script>
   </body>
 </html>
